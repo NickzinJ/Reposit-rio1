@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Filmes</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="header">
+    
+    <!-- Lado esquerdo com imagem -->
+    <div class="left">
+      <div class="main"></div>
+    </div>
+    
+    <!-- Lado direito com formulário -->
+    <div class="right">
+      <form class="form">
+        <h1>Pesquisa de Filmes</h1>
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="exemplo@email.com" required>
+
+        <label for="generoFilme">Gênero de filme favorito</label>
+        <select id="generoFilme" required>
+          <option value="">Selecione</option>
+          <option value="acao">Ação</option>
+          <option value="comedia">Comédia</option>
+          <option value="drama">Drama</option>
+          <option value="terror">Terror</option>
+          <option value="ficcao">Ficção Científica</option>
+          <option value="animacao">Animação</option>
+        </select>
+
+        <label>Com que frequência você assiste filmes?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="frequencia" value="semanal"> Semanalmente</label>
+          <label><input type="radio" name="frequencia" value="mensal"> Mensalmente</label>
+          <label><input type="radio" name="frequencia" value="raramente"> Raramente</label>
+        </div>
+
+        <label>Onde você costuma assistir?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="cinema"> Cinema</label>
+          <label><input type="checkbox" value="streaming"> Streaming</label>
+          <label><input type="checkbox" value="tv"> TV aberta</label>
+          <label><input type="checkbox" value="downloads"> Downloads</label>
+        </div>
+
+        <label for="filmeFavorito">Qual foi o melhor filme que você já assistiu?</label>
+        <input type="text" id="filmeFavorito" placeholder="Digite o nome do filme" required>
+
+        <label for="opiniao">O que mais te chama atenção em um filme?</label>
+        <textarea id="opiniao" rows="4" placeholder="História, atores, efeitos especiais..."></textarea>
+
+        <button type="submit">Enviar Resposta</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
